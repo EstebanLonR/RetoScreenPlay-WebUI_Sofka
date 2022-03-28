@@ -1,0 +1,380 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en" class=""&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;title&gt;Login - My Store&lt;/title&gt; <br/>
+  &lt;meta name="generator" content="PrestaShop"&gt; <br/>
+  &lt;meta name="robots" content="index,follow"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0"&gt; <br/>
+  &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt; <br/>
+  &lt;link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1461205423"&gt; <br/>
+  &lt;link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1461205423"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/global.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/autoload/highdpi.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/autoload/responsive-tables.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/autoload/uniform.default.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/js/jquery/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/authentication.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockbanner/blockbanner.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcart/blockcart.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcategories/blockcategories.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcurrencies/blockcurrencies.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocklanguages/blocklanguages.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockcontact/blockcontact.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocknewsletter/blocknewsletter.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/js/jquery/plugins/autocomplete/jquery.autocomplete.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/product_list.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocksearch/blocksearch.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocktags/blocktags.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockuserinfo/blockuserinfo.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockviewed/blockviewed.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/modules/themeconfigurator/css/hooks.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blockwishlist/blockwishlist.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/productcomments/productcomments.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocktopmenu/css/blocktopmenu.css" type="text/css" media="all"&gt; <br/>
+  &lt;link rel="stylesheet" href="/themes/default-bootstrap/css/modules/blocktopmenu/css/superfish-modified.css" type="text/css" media="all"&gt; <br/>
+  &lt;script type="text/javascript"&gt;<br/>
+var CUSTOMIZE_TEXTFIELD = 1;<br/>
+var FancyboxI18nClose = 'Close';<br/>
+var FancyboxI18nNext = 'Next';<br/>
+var FancyboxI18nPrev = 'Previous';<br/>
+var added_to_wishlist = 'Added to your wishlist.';<br/>
+var ajax_allowed = true;<br/>
+var ajaxsearch = true;<br/>
+var baseDir = 'http://automationpractice.com/';<br/>
+var baseUri = 'http://automationpractice.com/index.php';<br/>
+var blocksearch_type = 'top';<br/>
+var contentOnly = false;<br/>
+var countries = {"21":{"id_country":"21","id_lang":"1","name":"United States","id_zone":"2","id_currency":"0","iso_code":"US","call_prefix":"1","active":"1","contains_states":"1","need_identification_number":"0","need_zip_code":"1","zip_code_format":"NNNNN","display_tax_label":"0","country":"United States","zone":"North America","states":[{"id_state":"1","id_country":"21","id_zone":"2","name":"Alabama","iso_code":"AL","tax_behavior":"0","active":"1"},{"id_state":"2","id_country":"21","id_zone":"2","name":"Alaska","iso_code":"AK","tax_behavior":"0","active":"1"},{"id_state":"3","id_country":"21","id_zone":"2","name":"Arizona","iso_code":"AZ","tax_behavior":"0","active":"1"},{"id_state":"4","id_country":"21","id_zone":"2","name":"Arkansas","iso_code":"AR","tax_behavior":"0","active":"1"},{"id_state":"5","id_country":"21","id_zone":"2","name":"California","iso_code":"CA","tax_behavior":"0","active":"1"},{"id_state":"6","id_country":"21","id_zone":"2","name":"Colorado","iso_code":"CO","tax_behavior":"0","active":"1"},{"id_state":"7","id_country":"21","id_zone":"2","name":"Connecticut","iso_code":"CT","tax_behavior":"0","active":"1"},{"id_state":"8","id_country":"21","id_zone":"2","name":"Delaware","iso_code":"DE","tax_behavior":"0","active":"1"},{"id_state":"53","id_country":"21","id_zone":"2","name":"District of Columbia","iso_code":"DC","tax_behavior":"0","active":"1"},{"id_state":"9","id_country":"21","id_zone":"2","name":"Florida","iso_code":"FL","tax_behavior":"0","active":"1"},{"id_state":"10","id_country":"21","id_zone":"2","name":"Georgia","iso_code":"GA","tax_behavior":"0","active":"1"},{"id_state":"11","id_country":"21","id_zone":"2","name":"Hawaii","iso_code":"HI","tax_behavior":"0","active":"1"},{"id_state":"12","id_country":"21","id_zone":"2","name":"Idaho","iso_code":"ID","tax_behavior":"0","active":"1"},{"id_state":"13","id_country":"21","id_zone":"2","name":"Illinois","iso_code":"IL","tax_behavior":"0","active":"1"},{"id_state":"14","id_country":"21","id_zone":"2","name":"Indiana","iso_code":"IN","tax_behavior":"0","active":"1"},{"id_state":"15","id_country":"21","id_zone":"2","name":"Iowa","iso_code":"IA","tax_behavior":"0","active":"1"},{"id_state":"16","id_country":"21","id_zone":"2","name":"Kansas","iso_code":"KS","tax_behavior":"0","active":"1"},{"id_state":"17","id_country":"21","id_zone":"2","name":"Kentucky","iso_code":"KY","tax_behavior":"0","active":"1"},{"id_state":"18","id_country":"21","id_zone":"2","name":"Louisiana","iso_code":"LA","tax_behavior":"0","active":"1"},{"id_state":"19","id_country":"21","id_zone":"2","name":"Maine","iso_code":"ME","tax_behavior":"0","active":"1"},{"id_state":"20","id_country":"21","id_zone":"2","name":"Maryland","iso_code":"MD","tax_behavior":"0","active":"1"},{"id_state":"21","id_country":"21","id_zone":"2","name":"Massachusetts","iso_code":"MA","tax_behavior":"0","active":"1"},{"id_state":"22","id_country":"21","id_zone":"2","name":"Michigan","iso_code":"MI","tax_behavior":"0","active":"1"},{"id_state":"23","id_country":"21","id_zone":"2","name":"Minnesota","iso_code":"MN","tax_behavior":"0","active":"1"},{"id_state":"24","id_country":"21","id_zone":"2","name":"Mississippi","iso_code":"MS","tax_behavior":"0","active":"1"},{"id_state":"25","id_country":"21","id_zone":"2","name":"Missouri","iso_code":"MO","tax_behavior":"0","active":"1"},{"id_state":"26","id_country":"21","id_zone":"2","name":"Montana","iso_code":"MT","tax_behavior":"0","active":"1"},{"id_state":"27","id_country":"21","id_zone":"2","name":"Nebraska","iso_code":"NE","tax_behavior":"0","active":"1"},{"id_state":"28","id_country":"21","id_zone":"2","name":"Nevada","iso_code":"NV","tax_behavior":"0","active":"1"},{"id_state":"29","id_country":"21","id_zone":"2","name":"New Hampshire","iso_code":"NH","tax_behavior":"0","active":"1"},{"id_state":"30","id_country":"21","id_zone":"2","name":"New Jersey","iso_code":"NJ","tax_behavior":"0","active":"1"},{"id_state":"31","id_country":"21","id_zone":"2","name":"New Mexico","iso_code":"NM","tax_behavior":"0","active":"1"},{"id_state":"32","id_country":"21","id_zone":"2","name":"New York","iso_code":"NY","tax_behavior":"0","active":"1"},{"id_state":"33","id_country":"21","id_zone":"2","name":"North Carolina","iso_code":"NC","tax_behavior":"0","active":"1"},{"id_state":"34","id_country":"21","id_zone":"2","name":"North Dakota","iso_code":"ND","tax_behavior":"0","active":"1"},{"id_state":"35","id_country":"21","id_zone":"2","name":"Ohio","iso_code":"OH","tax_behavior":"0","active":"1"},{"id_state":"36","id_country":"21","id_zone":"2","name":"Oklahoma","iso_code":"OK","tax_behavior":"0","active":"1"},{"id_state":"37","id_country":"21","id_zone":"2","name":"Oregon","iso_code":"OR","tax_behavior":"0","active":"1"},{"id_state":"38","id_country":"21","id_zone":"2","name":"Pennsylvania","iso_code":"PA","tax_behavior":"0","active":"1"},{"id_state":"51","id_country":"21","id_zone":"2","name":"Puerto Rico","iso_code":"PR","tax_behavior":"0","active":"1"},{"id_state":"39","id_country":"21","id_zone":"2","name":"Rhode Island","iso_code":"RI","tax_behavior":"0","active":"1"},{"id_state":"40","id_country":"21","id_zone":"2","name":"South Carolina","iso_code":"SC","tax_behavior":"0","active":"1"},{"id_state":"41","id_country":"21","id_zone":"2","name":"South Dakota","iso_code":"SD","tax_behavior":"0","active":"1"},{"id_state":"42","id_country":"21","id_zone":"2","name":"Tennessee","iso_code":"TN","tax_behavior":"0","active":"1"},{"id_state":"43","id_country":"21","id_zone":"2","name":"Texas","iso_code":"TX","tax_behavior":"0","active":"1"},{"id_state":"52","id_country":"21","id_zone":"2","name":"US Virgin Islands","iso_code":"VI","tax_behavior":"0","active":"1"},{"id_state":"44","id_country":"21","id_zone":"2","name":"Utah","iso_code":"UT","tax_behavior":"0","active":"1"},{"id_state":"45","id_country":"21","id_zone":"2","name":"Vermont","iso_code":"VT","tax_behavior":"0","active":"1"},{"id_state":"46","id_country":"21","id_zone":"2","name":"Virginia","iso_code":"VA","tax_behavior":"0","active":"1"},{"id_state":"47","id_country":"21","id_zone":"2","name":"Washington","iso_code":"WA","tax_behavior":"0","active":"1"},{"id_state":"48","id_country":"21","id_zone":"2","name":"West Virginia","iso_code":"WV","tax_behavior":"0","active":"1"},{"id_state":"49","id_country":"21","id_zone":"2","name":"Wisconsin","iso_code":"WI","tax_behavior":"0","active":"1"},{"id_state":"50","id_country":"21","id_zone":"2","name":"Wyoming","iso_code":"WY","tax_behavior":"0","active":"1"}]}};<br/>
+var customizationIdMessage = 'Customization #';<br/>
+var delete_txt = 'Delete';<br/>
+var displayList = false;<br/>
+var email_create = false;<br/>
+var freeProductTranslation = 'Free!';<br/>
+var freeShippingTranslation = 'Free shipping!';<br/>
+var generated_date = 1648442715;<br/>
+var idSelectedCountry = false;<br/>
+var idSelectedState = false;<br/>
+var id_lang = 1;<br/>
+var img_dir = 'http://automationpractice.com/themes/default-bootstrap/img/';<br/>
+var instantsearch = false;<br/>
+var isGuest = 0;<br/>
+var isLogged = 0;<br/>
+var loggin_required = 'You must be logged in to manage your wishlist.';<br/>
+var mywishlist_url = 'http://automationpractice.com/index.php?fc=module&module=blockwishlist&controller=mywishlist';<br/>
+var page_name = 'authentication';<br/>
+var placeholder_blocknewsletter = 'Enter your e-mail';<br/>
+var priceDisplayMethod = 1;<br/>
+var priceDisplayPrecision = 2;<br/>
+var quickView = true;<br/>
+var removingLinkText = 'remove this product from my cart';<br/>
+var roundMode = 2;<br/>
+var search_url = 'http://automationpractice.com/index.php?controller=search';<br/>
+var static_token = 'e817bb0705dd58da8db074c69f729fd8';<br/>
+var token = 'ce65cefcbafad255f0866d3b32d32058';<br/>
+var usingSecureMode = false;<br/>
+var wishlistProductsIds = false;<br/>
+&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/jquery-1.11.0.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/jquery-migrate-1.2.1.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/jquery.easing.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/tools.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/global.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/autoload/10-bootstrap.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/autoload/15-jquery.total-storage.min.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/autoload/15-jquery.uniform-modified.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/fancybox/jquery.fancybox.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/products-comparison.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/jquery.typewatch.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/tools/vatManagement.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/tools/statesManagement.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/authentication.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/validate.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blockcart/ajax-cart.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/jquery.scrollTo.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/jquery.serialScroll.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/bxslider/jquery.bxslider.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/tools/treeManagement.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocknewsletter/blocknewsletter.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/js/jquery/plugins/autocomplete/jquery.autocomplete.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocksearch/blocksearch.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blockwishlist/js/ajax-wishlist.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocktopmenu/js/hoverIntent.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocktopmenu/js/superfish-modified.js"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="/themes/default-bootstrap/js/modules/blocktopmenu/js/blocktopmenu.js"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext" type="text/css" media="all"&gt; &lt;!--[if IE 8]&gt;<br/>
+		&lt;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"&gt;&lt;/script&gt;<br/>
+		&lt;script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"&gt;&lt;/script&gt;<br/>
+		&lt;![endif]--&gt; <br/>
+  &lt;style type="text/css"&gt;.fancybox-margin{margin-right:17px;}&lt;/style&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body id="authentication" class="authentication hide-left-column hide-right-column lang_en" style=""&gt; <br/>
+  &lt;div id="page"&gt; <br/>
+   &lt;div class="header-container"&gt; <br/>
+    &lt;header id="header"&gt; <br/>
+     &lt;div class="banner"&gt; <br/>
+      &lt;div class="container"&gt; <br/>
+       &lt;div class="row"&gt; &lt;a href="" title=""&gt; &lt;img class="img-responsive" src="http://automationpractice.com/modules/blockbanner/img/sale70.png" alt="" title="" width="1170" height="65"&gt; &lt;/a&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="nav"&gt; <br/>
+      &lt;div class="container"&gt; <br/>
+       &lt;div class="row"&gt; <br/>
+        &lt;nav&gt;<br/>
+         &lt;!-- Block user information module NAV  --&gt; <br/>
+         &lt;div class="header_user_info"&gt; &lt;a class="login" href="http://automationpractice.com/index.php?controller=my-account" rel="nofollow" title="Log in to your customer account"&gt; Sign in &lt;/a&gt; <br/>
+         &lt;/div&gt; &lt;!-- /Block usmodule NAV --&gt; &lt;!-- Block languages module --&gt; &lt;!-- /Block languages module --&gt; <br/>
+         &lt;div id="contact-link"&gt; &lt;a href="http://automationpractice.com/index.php?controller=contact" title="Contact Us"&gt;Contact us&lt;/a&gt; <br/>
+         &lt;/div&gt; &lt;span class="shop-phone"&gt; &lt;i class="icon-phone"&gt;&lt;/i&gt;Call us now: &lt;strong&gt;0123-456-789&lt;/strong&gt; &lt;/span&gt; <br/>
+        &lt;/nav&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div&gt; <br/>
+      &lt;div class="container"&gt; <br/>
+       &lt;div class="row"&gt; <br/>
+        &lt;div id="header_logo"&gt; &lt;a href="http://automationpractice.com/" title="My Store"&gt; &lt;img class="logo img-responsive" src="http://automationpractice.com/img/logo.jpg" alt="My Store" width="350" height="99"&gt; &lt;/a&gt; <br/>
+        &lt;/div&gt; &lt;!-- Block search module TOP --&gt; <br/>
+        &lt;div id="search_block_top" class="col-sm-4 clearfix"&gt; <br/>
+         &lt;form id="searchbox" method="get" action="http://automationpractice.com/index.php?controller=search"&gt; <br/>
+          &lt;input type="hidden" name="controller" value="search"&gt; <br/>
+          &lt;input type="hidden" name="orderby" value="position"&gt; <br/>
+          &lt;input type="hidden" name="orderway" value="desc"&gt; <br/>
+          &lt;input class="search_query form-control ac_input" type="text" id="search_query_top" name="search_query" placeholder="Search" value="" autocomplete="off"&gt; &lt;button type="submit" name="submit_search" class="btn btn-default button-search"&gt; &lt;span&gt;Search&lt;/span&gt; &lt;/button&gt; <br/>
+         &lt;/form&gt; <br/>
+        &lt;/div&gt; &lt;!-- /Block search module TOP --&gt;&lt;!-- MODULE Block cart --&gt; <br/>
+        &lt;div class="col-sm-4 clearfix"&gt; <br/>
+         &lt;div class="shopping_cart"&gt; &lt;a href="http://automationpractice.com/index.php?controller=order" title="View my shopping cart" rel="nofollow"&gt; &lt;b&gt;Cart&lt;/b&gt; &lt;span class="ajax_cart_quantity unvisible"&gt;0&lt;/span&gt; &lt;span class="ajax_cart_product_txt unvisible"&gt;Product&lt;/span&gt; &lt;span class="ajax_cart_product_txt_s unvisible"&gt;Products&lt;/span&gt; &lt;span class="ajax_cart_total unvisible"&gt; &lt;/span&gt; &lt;span class="ajax_cart_no_product"&gt;(empty)&lt;/span&gt; &lt;/a&gt; <br/>
+          &lt;div class="cart_block block exclusive"&gt; <br/>
+           &lt;div class="block_content"&gt; &lt;!-- block list of products --&gt; <br/>
+            &lt;div class="cart_block_list"&gt; <br/>
+             &lt;p class="cart_block_no_products"&gt; No products &lt;/p&gt; <br/>
+             &lt;div class="cart-prices"&gt; <br/>
+              &lt;div class="cart-prices-line first-line"&gt; &lt;span class="price cart_block_shipping_cost ajax_cart_shipping_cost"&gt; Free shipping! &lt;/span&gt; &lt;span&gt; Shipping &lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="cart-prices-line last-line"&gt; &lt;span class="price cart_block_total ajax_block_cart_total"&gt;$0.00&lt;/span&gt; &lt;span&gt;Total&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;p class="cart-buttons"&gt; &lt;a id="button_order_cart" class="btn btn-default button button-small" href="http://automationpractice.com/index.php?controller=order" title="Check out" rel="nofollow"&gt; &lt;span&gt; Check out&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt; &lt;/span&gt; &lt;/a&gt; &lt;/p&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt;&lt;!-- .cart_block --&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div id="layer_cart"&gt; <br/>
+         &lt;div class="clearfix"&gt; <br/>
+          &lt;div class="layer_cart_product col-xs-12 col-md-6"&gt; &lt;span class="cross" title="Close window"&gt;&lt;/span&gt; <br/>
+           &lt;h2&gt; &lt;i class="icon-ok"&gt;&lt;/i&gt;Product successfully added to your shopping cart &lt;/h2&gt; <br/>
+           &lt;div class="product-image-container layer_cart_img"&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="layer_cart_product_info"&gt; &lt;span id="layer_cart_product_title" class="product-name"&gt;&lt;/span&gt; &lt;span id="layer_cart_product_attributes"&gt;&lt;/span&gt; <br/>
+            &lt;div&gt; &lt;strong class="dark"&gt;Quantity&lt;/strong&gt; &lt;span id="layer_cart_product_quantity"&gt;&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div&gt; &lt;strong class="dark"&gt;Total&lt;/strong&gt; &lt;span id="layer_cart_product_price"&gt;&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="layer_cart_cart col-xs-12 col-md-6"&gt; <br/>
+           &lt;h2&gt; &lt;!-- Plural Case [both cases are needed because page may be updated in Javascript] --&gt; &lt;span class="ajax_cart_product_txt_s  unvisible"&gt; There are &lt;span class="ajax_cart_quantity"&gt;0&lt;/span&gt; items in your cart. &lt;/span&gt; &lt;!-- Singular Case [both cases are needed because page may be updated in Javascript] --&gt; &lt;span class="ajax_cart_product_txt "&gt; There is 1 item in your cart. &lt;/span&gt; &lt;/h2&gt; <br/>
+           &lt;div class="layer_cart_row"&gt; &lt;strong class="dark"&gt; Total products &lt;/strong&gt; &lt;span class="ajax_block_products_total"&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="layer_cart_row"&gt; &lt;strong class="dark"&gt; Total shipping&nbsp; &lt;/strong&gt; &lt;span class="ajax_cart_shipping_cost"&gt; Free shipping! &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="layer_cart_row"&gt; &lt;strong class="dark"&gt; Total &lt;/strong&gt; &lt;span class="ajax_block_cart_total"&gt; &lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="button-container"&gt; &lt;span class="continue btn btn-default button exclusive-medium" title="Continue shopping"&gt; &lt;span&gt; &lt;i class="icon-chevron-left left"&gt;&lt;/i&gt;Continue shopping &lt;/span&gt; &lt;/span&gt; &lt;a class="btn btn-default button button-medium" href="http://automationpractice.com/index.php?controller=order" title="Proceed to checkout" rel="nofollow"&gt; &lt;span&gt; Proceed to checkout&lt;i class="icon-chevron-right right"&gt;&lt;/i&gt; &lt;/span&gt; &lt;/a&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="crossseling"&gt;&lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;!-- #layer_cart --&gt; <br/>
+        &lt;div class="layer_cart_overlay"&gt;&lt;/div&gt; &lt;!-- /MODULE Block cart --&gt; &lt;!-- Menu --&gt; <br/>
+        &lt;div id="block_top_menu" class="sf-contener clearfix col-lg-12"&gt; <br/>
+         &lt;div class="cat-title"&gt;<br/>
+          Categories<br/>
+         &lt;/div&gt; <br/>
+         &lt;ul class="sf-menu clearfix menu-content sf-js-enabled sf-arrows"&gt; <br/>
+          &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=3&amp;controller=category" title="Women" class="sf-with-ul"&gt;Women&lt;/a&gt;<br/>
+           &lt;ul class="submenu-container clearfix first-in-line-xs" style="display: none;"&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=4&amp;controller=category" title="Tops" class="sf-with-ul"&gt;Tops&lt;/a&gt;<br/>
+             &lt;ul style="display: none;"&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=5&amp;controller=category" title="T-shirts"&gt;T-shirts&lt;/a&gt;&lt;/li&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=7&amp;controller=category" title="Blouses"&gt;Blouses&lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;/ul&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=8&amp;controller=category" title="Dresses" class="sf-with-ul"&gt;Dresses&lt;/a&gt;<br/>
+             &lt;ul style="display: none;"&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=9&amp;controller=category" title="Casual Dresses"&gt;Casual Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=10&amp;controller=category" title="Evening Dresses"&gt;Evening Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+              &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=11&amp;controller=category" title="Summer Dresses"&gt;Summer Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;/ul&gt;&lt;/li&gt;<br/>
+            &lt;li id="category-thumbnail"&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;img src="http://automationpractice.com/img/c/3-0_thumb.jpg" alt="Women" title="Women" class="imgm"&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div&gt;<br/>
+              &lt;img src="http://automationpractice.com/img/c/3-1_thumb.jpg" alt="Women" title="Women" class="imgm"&gt;<br/>
+             &lt;/div&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=8&amp;controller=category" title="Dresses" class="sf-with-ul"&gt;Dresses&lt;/a&gt;<br/>
+           &lt;ul class="submenu-container clearfix first-in-line-xs" style="display: none;"&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=9&amp;controller=category" title="Casual Dresses"&gt;Casual Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=10&amp;controller=category" title="Evening Dresses"&gt;Evening Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=11&amp;controller=category" title="Summer Dresses"&gt;Summer Dresses&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?id_category=5&amp;controller=category" title="T-shirts"&gt;T-shirts&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+        &lt;/div&gt; &lt;!--/ Menu --&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/header&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="columns-container"&gt; <br/>
+    &lt;div id="columns" class="container"&gt; &lt;!-- Breadcrumb --&gt; <br/>
+     &lt;div class="breadcrumb clearfix"&gt; &lt;a class="home" href="http://automationpractice.com/" title="Return to Home"&gt;&lt;i class="icon-home"&gt;&lt;/i&gt;&lt;/a&gt; &lt;span class="navigation-pipe"&gt;&gt;&lt;/span&gt; &lt;span class="navigation_page"&gt; Authentication&lt;/span&gt; <br/>
+     &lt;/div&gt; &lt;!-- /Breadcrumb --&gt; <br/>
+     &lt;div id="slider_row" class="row"&gt; <br/>
+      &lt;div id="top_column" class="center_column col-xs-12 col-sm-12"&gt;&lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="row"&gt; <br/>
+      &lt;div id="center_column" class="center_column col-xs-12 col-sm-12"&gt; <br/>
+       &lt;h1 class="page-heading"&gt;Authentication&lt;/h1&gt; &lt;!----&gt; <br/>
+       &lt;div class="row"&gt; <br/>
+        &lt;div class="col-xs-12 col-sm-6"&gt; <br/>
+         &lt;form action="http://automationpractice.com/index.php?controller=authentication" method="post" id="create-account_form" class="box"&gt; <br/>
+          &lt;h3 class="page-subheading"&gt;Create an account&lt;/h3&gt; <br/>
+          &lt;div class="form_content clearfix"&gt; <br/>
+           &lt;p&gt;Please enter your email address to create an account.&lt;/p&gt; <br/>
+           &lt;div class="alert alert-danger" id="create_account_error" style=""&gt;<br/>
+            &lt;ol&gt;<br/>
+             &lt;li&gt;An account using this email address has already been registered. Please enter a valid password or request a new one. &lt;/li&gt;<br/>
+            &lt;/ol&gt;<br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="form-group form-ok"&gt; &lt;label for="email_create"&gt;Email address&lt;/label&gt; <br/>
+            &lt;input type="text" class="is_required validate account_input form-control" data-validate="isEmail" id="email_create" name="email_create" value=""&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="submit"&gt; <br/>
+            &lt;input type="hidden" class="hidden" name="back" value="my-account"&gt; &lt;button class="btn btn-default button button-medium exclusive" type="submit" id="SubmitCreate" name="SubmitCreate"&gt; &lt;span&gt; &lt;i class="icon-user left"&gt;&lt;/i&gt; Create an account &lt;/span&gt; &lt;/button&gt; <br/>
+            &lt;input type="hidden" class="hidden" name="SubmitCreate" value="Create an account"&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/form&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="col-xs-12 col-sm-6"&gt; <br/>
+         &lt;form action="http://automationpractice.com/index.php?controller=authentication" method="post" id="login_form" class="box"&gt; <br/>
+          &lt;h3 class="page-subheading"&gt;Already registered?&lt;/h3&gt; <br/>
+          &lt;div class="form_content clearfix"&gt; <br/>
+           &lt;div class="form-group"&gt; &lt;label for="email"&gt;Email address&lt;/label&gt; <br/>
+            &lt;input class="is_required validate account_input form-control" data-validate="isEmail" type="text" id="email" name="email" value=""&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="form-group"&gt; &lt;label for="passwd"&gt;Password&lt;/label&gt; &lt;span&gt;&lt;input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value=""&gt;&lt;/span&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;p class="lost_password form-group"&gt;&lt;a href="http://automationpractice.com/index.php?controller=password" title="Recover your forgotten password" rel="nofollow"&gt;Forgot your password?&lt;/a&gt;&lt;/p&gt; <br/>
+           &lt;p class="submit"&gt; &lt;input type="hidden" class="hidden" name="back" value="my-account"&gt; &lt;button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium"&gt; &lt;span&gt; &lt;i class="icon-lock left"&gt;&lt;/i&gt; Sign in &lt;/span&gt; &lt;/button&gt; &lt;/p&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/form&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt;&lt;!-- #center_column --&gt; <br/>
+     &lt;/div&gt;&lt;!-- .row --&gt; <br/>
+    &lt;/div&gt;&lt;!-- #columns --&gt; <br/>
+   &lt;/div&gt;&lt;!-- .columns-container --&gt; &lt;!-- Footer --&gt; <br/>
+   &lt;div class="footer-container"&gt; <br/>
+    &lt;footer id="footer" class="container"&gt; <br/>
+     &lt;div class="row"&gt;<br/>
+      &lt;!-- Block Newsletter module--&gt; <br/>
+      &lt;div id="newsletter_block_left" class="block"&gt; <br/>
+       &lt;h4&gt;Newsletter&lt;/h4&gt; <br/>
+       &lt;div class="block_content"&gt; <br/>
+        &lt;form action="http://automationpractice.com/index.php" method="post"&gt; <br/>
+         &lt;div class="form-group"&gt; <br/>
+          &lt;input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="Enter your e-mail"&gt; &lt;button type="submit" name="submitNewsletter" class="btn btn-default button button-small"&gt; &lt;span&gt;Ok&lt;/span&gt; &lt;/button&gt; <br/>
+          &lt;input type="hidden" name="action" value="0"&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/form&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; &lt;!-- /Block Newsletter module--&gt; <br/>
+      &lt;section id="social_block"&gt; <br/>
+       &lt;ul&gt; <br/>
+        &lt;li class="facebook"&gt; &lt;a target="_blank" href="https://www.facebook.com/groups/525066904174158/"&gt; &lt;span&gt;Facebook&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="twitter"&gt; &lt;a target="_blank" href="https://twitter.com/seleniumfrmwrk"&gt; &lt;span&gt;Twitter&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="youtube"&gt; &lt;a target="_blank" href="https://www.youtube.com/channel/UCHl59sI3SRjQ-qPcTrgt0tA"&gt; &lt;span&gt;Youtube&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="google-plus"&gt; &lt;a target="_blank" href="https://plus.google.com/111979135243110831526/posts"&gt; &lt;span&gt;Google Plus&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+       &lt;h4&gt;Follow us&lt;/h4&gt; <br/>
+      &lt;/section&gt; <br/>
+      &lt;div class="clearfix"&gt;&lt;/div&gt; &lt;!-- Block categories module --&gt; <br/>
+      &lt;section class="blockcategories_footer footer-block col-xs-12 col-sm-2"&gt; <br/>
+       &lt;h4&gt;Categories&lt;/h4&gt; <br/>
+       &lt;div class="category_footer toggle-footer" style=""&gt; <br/>
+        &lt;div class="list"&gt; <br/>
+         &lt;ul class="tree dynamized" style="display: block;"&gt; <br/>
+          &lt;li class="last"&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.com/index.php?id_category=3&amp;controller=category" title="You will find here all woman fashion collections.  <br/>
+ This category includes all the basics of your wardrobe and much more: <br/>
+ shoes, accessories, printed t-shirts, feminine dresses, women's jeans!"&gt; Women &lt;/a&gt; <br/>
+           &lt;ul style="display: none;"&gt; <br/>
+            &lt;li&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.com/index.php?id_category=4&amp;controller=category" title="Choose from t-shirts, tops, blouses, short sleeves, long sleeves, tank tops, 3/4 sleeves and more. <br/>
+ Find the cut that suits you the best!"&gt; Tops &lt;/a&gt; <br/>
+             &lt;ul style="display: none;"&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.com/index.php?id_category=5&amp;controller=category" title="The must have of your wardrobe, take a look at our different colors, <br/>
+ shapes and style of our collection!"&gt; T-shirts &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li class="last"&gt; &lt;a href="http://automationpractice.com/index.php?id_category=7&amp;controller=category" title="Match your favorites blouses with the right accessories for the perfect look."&gt; Blouses &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;/ul&gt; &lt;/li&gt; <br/>
+            &lt;li class="last"&gt; &lt;span class="grower CLOSE"&gt; &lt;/span&gt;&lt;a href="http://automationpractice.com/index.php?id_category=8&amp;controller=category" title="Find your favorites dresses from our wide choice of evening, casual or summer dresses! <br/>
+ We offer dresses for every day, every style and every occasion."&gt; Dresses &lt;/a&gt; <br/>
+             &lt;ul style="display: none;"&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.com/index.php?id_category=9&amp;controller=category" title="You are looking for a dress for every day? Take a look at <br/>
+ our selection of dresses to find one that suits you."&gt; Casual Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li&gt; &lt;a href="http://automationpractice.com/index.php?id_category=10&amp;controller=category" title="Browse our different dresses to choose the perfect dress for an unforgettable evening!"&gt; Evening Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+              &lt;li class="last"&gt; &lt;a href="http://automationpractice.com/index.php?id_category=11&amp;controller=category" title="Short dress, long dress, silk dress, printed dress, you will find the perfect dress for summer."&gt; Summer Dresses &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;/ul&gt; &lt;/li&gt; <br/>
+         &lt;/ul&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!-- .category_footer --&gt; <br/>
+      &lt;/section&gt; &lt;!-- /Block categories module --&gt; &lt;!-- MODULE Block footer --&gt; <br/>
+      &lt;section class="footer-block col-xs-12 col-sm-2" id="block_various_links_footer"&gt; <br/>
+       &lt;h4&gt;Information&lt;/h4&gt; <br/>
+       &lt;ul class="toggle-footer" style=""&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?controller=prices-drop" title="Specials"&gt; Specials &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?controller=new-products" title="New products"&gt; New products &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?controller=best-sales" title="Best sellers"&gt; Best sellers &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?controller=stores" title="Our stores"&gt; Our stores &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?controller=contact" title="Contact us"&gt; Contact us &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?id_cms=3&amp;controller=cms" title="Terms and conditions of use"&gt; Terms and conditions of use &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li class="item"&gt; &lt;a href="http://automationpractice.com/index.php?id_cms=4&amp;controller=cms" title="About us"&gt; About us &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li&gt; &lt;a href="http://automationpractice.com/index.php?controller=sitemap" title="Sitemap"&gt; Sitemap &lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+      &lt;/section&gt; <br/>
+      &lt;section class="bottom-footer col-xs-12"&gt; <br/>
+       &lt;div&gt;<br/>
+         © 2014 &lt;a class="_blank" href="http://www.prestashop.com" target="_blank"&gt;Ecommerce software by PrestaShop™&lt;/a&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/section&gt; &lt;!-- /MODULE Block footer --&gt; &lt;!-- Block myaccount module --&gt; <br/>
+      &lt;section class="footer-block col-xs-12 col-sm-4"&gt; <br/>
+       &lt;h4&gt;&lt;a href="http://automationpractice.com/index.php?controller=my-account" title="Manage my customer account" rel="nofollow"&gt;My account&lt;/a&gt;&lt;/h4&gt; <br/>
+       &lt;div class="block_content toggle-footer" style=""&gt; <br/>
+        &lt;ul class="bullet"&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?controller=history" title="My orders" rel="nofollow"&gt;My orders&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?controller=order-slip" title="My credit slips" rel="nofollow"&gt;My credit slips&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?controller=addresses" title="My addresses" rel="nofollow"&gt;My addresses&lt;/a&gt;&lt;/li&gt; <br/>
+         &lt;li&gt;&lt;a href="http://automationpractice.com/index.php?controller=identity" title="Manage my personal information" rel="nofollow"&gt;My personal info&lt;/a&gt;&lt;/li&gt; <br/>
+        &lt;/ul&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/section&gt; &lt;!-- /Block myaccount module --&gt; &lt;!-- MODULE Block contact infos --&gt; <br/>
+      &lt;section id="block_contact_infos" class="footer-block col-xs-12 col-sm-4"&gt; <br/>
+       &lt;div&gt; <br/>
+        &lt;h4&gt;Store information&lt;/h4&gt; <br/>
+        &lt;ul class="toggle-footer" style=""&gt; <br/>
+         &lt;li&gt; &lt;i class="icon-map-marker"&gt;&lt;/i&gt;Selenium Framework, Research Triangle Park, North Carolina, USA &lt;/li&gt; <br/>
+         &lt;li&gt; &lt;i class="icon-phone"&gt;&lt;/i&gt;Call us now: &lt;span&gt;(347) 466-7432&lt;/span&gt; &lt;/li&gt; <br/>
+         &lt;li&gt; &lt;i class="icon-envelope-alt"&gt;&lt;/i&gt;Email: &lt;span&gt;&lt;a href="mailto:%73%75%70%70%6f%72%74@%73%65%6c%65%6e%69%75%6d%66%72%61%6d%65%77%6f%72%6b.%63%6f%6d"&gt;support@seleniumframework.com&lt;/a&gt;&lt;/span&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/section&gt; &lt;!-- /MODULE Block contact infos --&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/footer&gt; <br/>
+   &lt;/div&gt;&lt;!-- #footer --&gt; <br/>
+  &lt;/div&gt;&lt;!-- #page --&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
